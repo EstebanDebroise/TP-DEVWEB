@@ -1,0 +1,136 @@
+/* Variables Globales */
+:root {
+    --accent: #2b6cb0;
+    --muted: #666;
+}
+
+/* Base du body */
+body {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    background: #f7f7f9;
+}
+
+/* En-tête du site */
+.site-header {
+    background: var(--accent);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header h1 {
+    font-size: 1.1rem;
+}
+.main-nav a {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+/* Conteneur principal */
+.container {
+    margin: 1.25rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+    Width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+/* Formulaires */
+.form-card {
+    width: 100%;
+    max-width: 560px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form input, .form select, .form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+.block {
+    display: flex;
+}
+.grid-3 {
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+/* Tableaux */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th,
+.table td {
+    padding: .5rem;
+    border: 1px solid #eee;
+    text-align: left;
+}
+.site-footer {
+    text-align: center;
+    color: #999;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-nav {
+        margin-top: .5rem;
+    }
+    .main-nav a {
+        display: inline-block;
+        margin: 0 .5rem .5rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}

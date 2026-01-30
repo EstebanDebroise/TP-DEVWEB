@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Créer un ticket - Gestion Ticketing</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Gestion Ticketing</h1>
+    <nav class="main-nav">
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="projects.html">Projets</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="create-ticket.html">Créer un ticket</a>
+      <a href="login.html">Se déconnecter</a>
+    </nav>
+  </header>
+
+  <main class="container center">
+    <section class="card form-card">
+      <h2>Créer un ticket</h2>
+      <form class="form" action="#" method="post">
+        <label for="title">Titre</label>
+        <input id="title" name="title" required>
+
+        <label for="project">Projet</label>
+        <select id="project" name="project">
+          <option>Projet A</option>
+          <option>Projet B</option>
+        </select>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="6"></textarea>
+
+        <label for="type">Type</label>
+        <select id="type" name="type">
+          <option>Inclus</option>
+          <option>Facturable</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Créer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 - TP Ticketing</footer>
+</body>
+</html>
