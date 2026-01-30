@@ -73,6 +73,9 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+a.btn-primary{
+    text-decoration: none;
+}
 .btn-primary {
     background: var(--accent);
     color: #fff;
