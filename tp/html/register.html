@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Connexion - Gestion Ticketing</title>
+  <title>Créer un compte - Gestion Ticketing</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 
   <main class="container center">
     <section class="card form-card">
-      <h2>Connexion</h2>
+      <h2>Créer un compte</h2>
       <form action="#" method="post" class="form">
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required>
@@ -21,17 +21,15 @@
         <label for="password">Mot de passe</label>
         <input id="password" name="password" type="password" required>
 
-        <button type="submit" class="btn-primary">Se connecter</button>
+        <label for="confirm-password">Confirmer le mot de passe</label>
+        <input id="confirm-password" name="confirm-password" type="password" required>
+
+        <button type="submit" class="btn-primary">Créer le compte</button>
       </form>
-      <p style="text-align:center;margin-top:1em;">
-        <a href="register.html">Créer un compte</a>
-      </p>
     </section>
   </main>
 
   <footer class="site-footer">© 2026 - TP Ticketing</footer>
+  <script src="../js/register.js"></script>
 </body>
-  <script src="../js/login.js"></script>
 </html>
-
-
