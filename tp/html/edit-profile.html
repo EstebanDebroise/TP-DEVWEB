@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Modifier le profil - Gestion Ticketing</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header class="site-header">
+    <h1>Gestion Ticketing</h1>
+    <nav class="main-nav">
+      <a href="user.html" title="Mon profil">Profil</a>
+      <a href="dashboard.html">Tableau de bord</a>
+      <a href="projects.html">Projets</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="create-ticket.html">Créer un ticket</a>
+      <a href="login.html">Se déconnecter</a>
+    </nav>
+  </header>
+
+  <main class="container center">
+    <section class="card form-card">
+      <h2>Modifier mon profil</h2>
+      <form action="#" method="post" class="form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" value="utilisateur@example.com" required>
+
+        <label for="lastname">Nom</label>
+        <input id="lastname" name="lastname" type="text" value="Dupont" required>
+
+        <label for="firstname">Prénom</label>
+        <input id="firstname" name="firstname" type="text" value="Jean" required>
+
+        <button type="submit" class="btn-primary">Enregistrer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 - TP Ticketing</footer>
+  <script src="../js/edit-profile.js"></script>
+</body>
+</html>
