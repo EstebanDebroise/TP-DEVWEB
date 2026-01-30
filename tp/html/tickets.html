@@ -20,24 +20,32 @@
 
   <main class="container">
     <h2>Liste des tickets</h2>
+    <label for="ticket-filter">Afficher :</label>
+    <select id="ticket-filter" class="btn-primary">
+      <option value="all">Tous</option>
+      <option value="Inclus">Inclus</option>
+      <option value="Facturable">Facturable</option>
+    </select>
     <table class="table">
       <thead>
-        <tr><th>ID</th><th>Titre</th><th>Projet</th><th>Statut</th><th>Temps réel</th></tr>
+        <tr><th>ID</th><th>Titre</th><th>Projet</th><th>Statut</th><th>Temps réel</th><th>Type/th></tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="Inclus">
           <td>1</td>
           <td><a href="ticket-detail.html">Correction bouton</a></td>
           <td>Projet A</td>
           <td>Nouveau</td>
           <td>0h</td>
+          <td>Inclus</td>
         </tr>
-        <tr>
+        <tr class="Facturable">
           <td>2</td>
           <td>MàJ page accueil</td>
           <td>Projet B</td>
           <td>En cours</td>
           <td>2h30</td>
+          <td>Facturable</td>
         </tr>
       </tbody>
     </table>
@@ -45,4 +53,5 @@
 
   <footer class="site-footer">© 2026 - TP Ticketing</footer>
 </body>
+  <script src="../js/tickets.js"></script>
 </html>
